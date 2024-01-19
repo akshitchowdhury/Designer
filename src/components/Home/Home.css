@@ -1,0 +1,26 @@
+/* src/components/Home.css */
+.home-container {
+    position: relative;
+    height: 100vh; /* Adjust the height based on your design */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fade-in-slide-from-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInSlideFromLeft 1s forwards;
+  }
+  
+  @keyframes fadeInSlideFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

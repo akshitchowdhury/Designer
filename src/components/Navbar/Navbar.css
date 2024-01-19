@@ -1,0 +1,53 @@
+/* src/components/Navbar.css */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  }
+  
+  .menu-icon.active {
+    transform: rotate(90deg); /* Rotate the icon when the menu is active */
+  }
+  
+  .menu-dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform-origin: top right;
+    transform: scaleY(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 6%;
+}
+  
+  .menu-dropdown.active {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  
+  .menu-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-dropdown li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .menu-dropdown li:hover {
+    background-color: #f0f0f0;
+  }
+  
