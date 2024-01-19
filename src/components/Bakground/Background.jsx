@@ -1,5 +1,6 @@
 import React from 'react'
-import bkgd from '../assets/bkgd.jpeg'
+import bkgd from '../../assets/bkgd.jpeg'
+
 const Background = () => {
   return (
     <div style={{
