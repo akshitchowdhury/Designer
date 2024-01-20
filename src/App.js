@@ -6,8 +6,8 @@ import Home from './components/Home/Home.jsx';
 import Contacts from './components/Contacts/Contacts.jsx';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
+  Routes,
   Link
 } from "react-router-dom";
 
@@ -23,13 +23,13 @@ function App() {
     <Navbar/>
     <Background/>      
     
-    <Switch>
-
-      <Route path='/contacts'>
-      <Contacts/>  
-      </Route>
-    </Switch>
     
+    <Routes>
+      <Route path='/contacts' Component={Contacts}>
+        
+      </Route>
+      </Routes>
+     
     
     
     </div>
