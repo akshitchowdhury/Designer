@@ -31,7 +31,7 @@ function App() {
       <Route path='/contacts' Component={Contacts}>
         
       </Route>
-      <Route path='/skilss' Component={Skills}>
+      <Route path='/skills' Component={Skills}>
 
       </Route>
       </Routes>
