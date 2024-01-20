@@ -17,7 +17,7 @@ function App() {
     <div className="App">
 
     <Home></Home>
-    <Link to="/contacts">
+    <Link to="/contacts" style={{ position: 'absolute', top: '0', left: '0', padding: '10px' }}>
     Contacts
     </Link>
     <Navbar/>
