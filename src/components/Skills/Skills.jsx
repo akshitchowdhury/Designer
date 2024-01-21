@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './Skills.css'
 const Skills = () => {
   return (
-    <div>
-        <h1>
+    <div className='skills'>
+        <h1 className='fadeInSlideFromLeft'>
             Skill Tree
         </h1>      
     </div>

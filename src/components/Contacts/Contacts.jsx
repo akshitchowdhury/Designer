@@ -3,11 +3,16 @@ import './Contacts.css'
 
 const Contacts = () => {
   return (
+
+    <div className='base'>
     <div className='contacts'>
-        <p>
+        
             <h1>This is the Contacts page</h1>
-        </p>      
+            
+            <p>Add your Contacts info here</p>     
     </div>
+    </div>
+
   )
 }
 
