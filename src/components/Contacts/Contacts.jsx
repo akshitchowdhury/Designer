@@ -8,9 +8,10 @@ const Contacts = () => {
     
     <div className='base'>
     <div className='contacts'>
-        <Link to='/https://github.com/akshitchowdhury'>
+        {/* <Link to='/https://github.com/akshitchowdhury'> */}
             
-            <a href="https://github.com/akshitchowdhury"><h1>Github </h1></a></Link> 
+            <a href="https://github.com/akshitchowdhury" target='_blank' rel='noopener noreferrer'><h1>Github </h1></a>
+            {/* </Link>  */}
             <p>Add your Contacts info here</p>     
         {/* <Routes>
           <Route path='https://github.com/akshitchowdhury' element={<Link/>}></Route>

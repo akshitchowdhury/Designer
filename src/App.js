@@ -70,9 +70,11 @@ const App = () => {
             <li>
               <Link to="/skills">Skills</Link>
             </li>
+          
             {/* Add more navigation links if needed */}
           </ul>
         </nav>
+        
         <hr />
         <Routes>
         <Route path='/' element={<Home/>}/>
