@@ -54,6 +54,7 @@ import Skills from './components/Skills/Skills.jsx';
 import Background from './components/Bakground/Background.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Home from './components/Home/Home.jsx';
+import Checkboxes from './components/Checkbox/Checkboxes.jsx';
 
 const App = () => {
   return (
@@ -83,6 +84,7 @@ const App = () => {
           
           {/* Add more routes as needed */}
         </Routes>
+        <Checkboxes/>
         <Navbar/>
 <Background/> 
       </div>
