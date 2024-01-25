@@ -71,6 +71,9 @@ const App = () => {
             <li>
               <Link to="/skills">Skills</Link>
             </li>
+            <li>
+              <Link to= "about">About</Link>
+            </li>
           
             {/* Add more navigation links if needed */}
           </ul>
