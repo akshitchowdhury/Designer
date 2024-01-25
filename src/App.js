@@ -55,6 +55,7 @@ import Background from './components/Bakground/Background.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Home from './components/Home/Home.jsx';
 import Checkboxes from './components/Checkbox/Checkboxes.jsx';
+import About from './components/About/About.jsx';
 
 const App = () => {
   return (
