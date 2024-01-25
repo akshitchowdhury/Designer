@@ -84,7 +84,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
           <Route path="/contacts" element={<Contacts/>} />
           <Route path="/skills" element={<Skills/>} />
-          
+          <Route path ="/about" element = {<About/>}/>
           {/* Add more routes as needed */}
         </Routes>
         <Checkboxes/>
