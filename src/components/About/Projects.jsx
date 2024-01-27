@@ -1,11 +1,14 @@
 import React from 'react'
 import './Projects.css'
 const Projects = () => {
+    const data = {name : "DevAsura",
+topic : "Projects",
+statement : "These are my"}
   return (
 <>
 <div className='base'>
 <div className='projects'>
-    List of my Projects
+    {data.statement} {data.topic}
 </div>
 </div>
 </>
