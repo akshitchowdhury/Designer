@@ -1,26 +1,32 @@
 import React from 'react'
 import './Projects.css'
+import Checker from './Checker'
+
+
 const Projects = () => {
     const data = {name : "DevAsura",
 topic : "Projects",
-statement : "These are my",
-check : true}
-  return (
-<>
-<div className='base'>
-if(check===true){
-
-
-<div className='projects'>
-    {data.statement} {data.topic}
-</div>
+false_statement : "Not Working",
+check : true,
+content : <Checker/> }
+let indicator;
+if(data.check===true){
+   indicator = data.content; 
 }
 
 else{
-    <div className='projects'>
-    Nothing here
-</div>
+indicator=data.false_statement;
 }
+
+return (
+<>
+<div className='base'>
+
+<div className='projects'>
+    
+    {indicator}
+</div>
+
 </div>
 </>
   )
