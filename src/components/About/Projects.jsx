@@ -1,14 +1,14 @@
 import React from 'react'
-
+import './Projects.css'
 const Projects = () => {
   return (
-
+<>
 <div className='base'>
-<p className='projects'>
+<div className='projects'>
     List of my Projects
-</p>
 </div>
-
+</div>
+</>
   )
 }
 
