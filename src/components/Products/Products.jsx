@@ -1,27 +1,27 @@
-import React from 'react'
-
+import React from 'react';
+import './Products.css'
 const Products = () => {
-
-    const products = [{ title: 'Cabbage', isFruit: false, id: 1 },
+  const products = [
+    { title: 'Cabbage', isFruit: false, id: 1 },
     { title: 'Garlic', isFruit: false, id: 2 },
-    { title: 'Apple', isFruit: true, id: 3 },]
+    { title: 'Apple', isFruit: true, id: 3 },
+  ];
 
-const listItems = products.map(item=>{
-
-        <li key={item.id}>
-            
-            {item.id}
-        </li>
-
-})
+  const listItems = products.map(item => 
+    <li key={item.id}>
+      {item.title}
+    </li>
+  );
 
   return (
-    <div>
-    <ul>
+    <div className='base'>
+      <div className='products'>
+      <ul>
         {listItems}
-        </ul>
+      </ul>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;
