@@ -57,6 +57,8 @@ import Home from './components/Home/Home.jsx';
 import Checkboxes from './components/Checkbox/Checkboxes.jsx';
 import About from './components/About/About.jsx';
 import Projects from './components/About/Projects.jsx';
+import Products from './components/Products/Products.jsx';
+
 
 const App = () => {
   return (
@@ -79,7 +81,9 @@ const App = () => {
             <li>
               <Link to= "/projects"> Projects</Link>
             </li>
-          
+            <li>
+              <Link to="/products">Product List</Link>
+            </li>          
             {/* Add more navigation links if needed */}
           </ul>
         </nav>
@@ -91,6 +95,7 @@ const App = () => {
           <Route path="/skills" element={<Skills/>} />
           <Route path ="/about" element = {<About/>}/>
           <Route path ="/projects" element = {<Projects/>}/>
+          <Route to="/products" element = {<Products/>}/>
           {/* Add more routes as needed */}
         </Routes>
         <Checkboxes/>
