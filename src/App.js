@@ -95,7 +95,7 @@ const App = () => {
           <Route path="/skills" element={<Skills/>} />
           <Route path ="/about" element = {<About/>}/>
           <Route path ="/projects" element = {<Projects/>}/>
-          <Route to="/products" element = {<Products/>}/>
+          <Route path="/products" element = {<Products/>}/>
           {/* Add more routes as needed */}
         </Routes>
         <Checkboxes/>
