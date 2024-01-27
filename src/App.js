@@ -56,6 +56,7 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import Home from './components/Home/Home.jsx';
 import Checkboxes from './components/Checkbox/Checkboxes.jsx';
 import About from './components/About/About.jsx';
+import Projects from './components/About/Projects.jsx';
 
 const App = () => {
   return (
@@ -73,7 +74,10 @@ const App = () => {
               <Link to="/skills">Skills</Link>
             </li>
             <li>
-              <Link to= "about">About</Link>
+              <Link to= "/about">About</Link>
+            </li>
+            <li>
+              <Link to= "/projects"> Projects</Link>
             </li>
           
             {/* Add more navigation links if needed */}
@@ -86,6 +90,7 @@ const App = () => {
           <Route path="/contacts" element={<Contacts/>} />
           <Route path="/skills" element={<Skills/>} />
           <Route path ="/about" element = {<About/>}/>
+          <Route path ="/projects" element = {<Projects/>}/>
           {/* Add more routes as needed */}
         </Routes>
         <Checkboxes/>
