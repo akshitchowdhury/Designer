@@ -7,16 +7,10 @@ const Projects = () => {
     const data = {name : "DevAsura",
 topic : "Projects",
 false_statement : "Not Working",
-check : true,
+check : false,
 content : <Checker/> }
-let indicator;
-if(data.check===true){
-   indicator = data.content; 
-}
 
-else{
-indicator=data.false_statement;
-}
+let indicator = data.check? data.content : data.false_statement;
 
 return (
 <>
