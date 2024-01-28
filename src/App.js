@@ -58,6 +58,7 @@ import Checkboxes from './components/Checkbox/Checkboxes.jsx';
 import About from './components/About/About.jsx';
 import Products from './components/Products/Products.jsx';
 import Projects from './components/Projects/Projects.jsx';
+import Count from './components/Count/Count.jsx';
 
 
 
@@ -86,6 +87,9 @@ const App = () => {
               <Link to="/products">Product List</Link>
             </li>          
             {/* Add more navigation links if needed */}
+            <li>
+              <Link to ='/count'>Counting app</Link>
+            </li>
           </ul>
         </nav>
         
@@ -98,6 +102,8 @@ const App = () => {
           <Route path ="/projects" element = {<Projects/>}/>
           <Route path="/products" element = {<Products/>}/>
           {/* Add more routes as needed */}
+          <Route path="/count" element = {<Count/>}/>
+          <Route path="/count" element = {<Count/>}/>
         </Routes>
         <Checkboxes/>
         <Navbar/>

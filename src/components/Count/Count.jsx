@@ -1,16 +1,18 @@
 import React from 'react'
 import { useState } from 'react'
 
-    const [count, setCount] = useState(0);
+    
 
 
-
-function handleClick(){
-    setCount(count++);
-}
 
 const Count = () => {
-  return (
+
+    const [count, setCount] = useState(0);
+
+    function handleClick(){
+        setCount(count+1);
+    }
+    return (
     <>
         <h1>{count}</h1>
 
@@ -18,5 +20,7 @@ const Count = () => {
     </>
   )
 }
+
+
 
 export default Count
