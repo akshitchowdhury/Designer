@@ -60,6 +60,7 @@ import Products from './components/Products/Products.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Count from './components/Count/Count.jsx';
 import Board from './components/TicTacToe/Board.jsx';
+import Time from './components/Time/Time.jsx';
 
 
 
@@ -94,6 +95,10 @@ const App = () => {
             <li>
               <Link to = '/board'>Board game</Link>
             </li>
+
+            <li>
+              <Link to = '/time'>Time check</Link>
+            </li>
           </ul>
         </nav>
         
@@ -109,6 +114,8 @@ const App = () => {
           
           <Route path="/count" element = {<Count/>}/>
           <Route path='/board' element = {<Board/>}/>          
+          <Route path='/time' element = {<Time/>}/>          
+
           </Routes>
         <Checkboxes/>
         <Navbar/>
