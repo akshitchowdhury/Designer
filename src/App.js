@@ -56,8 +56,9 @@ import Navbar from './components/Navbar/Navbar.jsx';
 import Home from './components/Home/Home.jsx';
 import Checkboxes from './components/Checkbox/Checkboxes.jsx';
 import About from './components/About/About.jsx';
-import Projects from './components/About/Projects.jsx';
 import Products from './components/Products/Products.jsx';
+import Projects from './components/Projects/Projects.jsx';
+
 
 
 const App = () => {
