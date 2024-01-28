@@ -2,18 +2,17 @@ import React, { useState } from 'react'
 
 const Tiles = (props) => {
 
-const[value, setValue] = useState(null);
 
 
-function handleClick(){
+// function handleClick(value){
 
-    setValue("X")
-}
+//     setValue("X")
+// }
 
     return (
     <div>
         <button className='tile' style={{width: '50px', height: '50px'}}
-          onClick={handleClick}>
+         onClick={props.onSquareClick} >
             {props.value}
         </button>
     </div>
