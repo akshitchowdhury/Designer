@@ -8,7 +8,7 @@ const Products = () => {
   ];
 
   const listItems = products.map(item => 
-    <li key={item.id}>
+    <li key={item.id} style={{color: item.isFruit? 'magenta' : 'green'}}>
       {item.title}
     </li>
   );
